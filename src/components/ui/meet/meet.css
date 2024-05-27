@@ -1,0 +1,35 @@
+.meet-wrapper {
+  /* background-color: white; */
+  padding: 40px;
+}
+
+.meet-box {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 24px 16px 24px;
+  /* width: 100%; */
+  color: white;
+  background-color: var(--red-highlight);
+  border-radius: 36px;
+}
+
+.meet-title {
+  font-size: 44px;
+  font-weight: 800;
+  margin-bottom: 24px;
+  width: 80%;
+}
+
+.boton-meet {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid var(--light-background);
+  color: var(--light-background);
+  background-color: var(--red-highlight);
+  padding: 8px 16px;
+  width: fit-content;
+  border-radius: 16px;
+  gap: 8px;
+  font-size: 20px;
+}

@@ -1,0 +1,36 @@
+.footer-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+  padding-top: 200px;
+  font-size: 14px;
+  color: var(--light-background);
+  margin-top: auto;
+  text-align: left;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.footer-column:nth-child(1) {
+  width: 36%;
+}
+
+.footer-column-title {
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.logo-binamics {
+  height: 40px;
+  object-fit: contain;
+  width: fit-content;
+}
+
+.footer-text {
+  line-height: 24px;
+}

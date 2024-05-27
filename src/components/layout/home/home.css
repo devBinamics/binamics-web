@@ -1,0 +1,38 @@
+.home-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  background-color: var(--dark-background);
+  min-height: 100vh;
+}
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.gap-4 {
+  gap: 4px;
+}
+
+.gap-8 {
+  gap: 8px;
+}
+
+.gap-16 {
+  gap: 16px;
+}
+
+.gap-24 {
+  gap: 24px;
+}
+
+.footer-background {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 0% 30%;
+  background-size: cover;
+  background-image: url("/public/assets/imagenes/fondo_puntos-02.png");
+  margin-top: auto;
+}

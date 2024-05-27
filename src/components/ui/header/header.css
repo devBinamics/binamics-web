@@ -1,6 +1,39 @@
 .header-wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 24px;
+  background-color: var(--dark-background);
+}
+
+.logo-section {
+}
+
+.rutas-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--light-background);
+  font-size: 16px;
+  gap: 24px;
+  margin-left: auto;
+}
+
+a {
+  text-decoration: none;
+  color: var(--light-background);
+}
+
+.rutas-section > a {
+  line-height: 34px;
+}
+
+.boton-contacto {
+  padding: 8px 16px;
+  border-radius: 16px;
+  font-size: 16px;
+  border: none;
+  background-color: var(--red-highlight);
+  color: white;
+  cursor: pointer;
 }

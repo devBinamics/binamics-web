@@ -33,6 +33,6 @@
   background-repeat: no-repeat;
   background-position: 0% 30%;
   background-size: cover;
-  background-image: url("%PUBLIC_URL%/assets/imagenes/fondo_puntos-02.png");
+  background-image: url("/public/assets/imagenes/fondo_puntos-02.png");
   margin-top: auto;
 }

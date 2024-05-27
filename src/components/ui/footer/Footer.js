@@ -14,7 +14,7 @@ export const Footer = () => {
         <img
           className="logo-binamics"
           style={{ marginBottom: 24 }}
-          src="/assets/logos/logo-binamics-blanco.png"
+          src="%PUBLIC_URL%/assets/logos/logo-binamics-blanco.png"
           alt="logo-empresa"
         />
         <p className="footer-column-title">Oficina</p>

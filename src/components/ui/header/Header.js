@@ -3,7 +3,7 @@ import "./header.css";
 export const Header = () => {
   return (
     <header className="header-wrapper">
-        <img src="/assets/logos/logo-binamics-blanco.png" alt="logo-empresa" className="logo-binamics" />
+        <img src="%PUBLIC_URL%/assets/logos/logo-binamics-blanco.png" alt="logo-empresa" className="logo-binamics" />
       <span className="rutas-section">
         <a href="#productos">Productos</a>
         <a href="#about">Acerca de</a>

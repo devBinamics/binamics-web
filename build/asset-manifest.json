@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c60fbdb5.css",
+    "main.js": "/static/js/main.b511ef6e.js",
+    "static/media/fondo_puntos-02.png": "/static/media/fondo_puntos-02.7260a9cfa92466b2f563.png",
+    "index.html": "/index.html",
+    "main.c60fbdb5.css.map": "/static/css/main.c60fbdb5.css.map",
+    "main.b511ef6e.js.map": "/static/js/main.b511ef6e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c60fbdb5.css",
+    "static/js/main.b511ef6e.js"
+  ]
+}

@@ -29,10 +29,31 @@
 }
 
 .footer-background {
-  background-color: transparent;
+  background: url("/public/assets/imagenes/fondo_puntos-01.png"),
+    linear-gradient(#fff 0%, #fff 25%, #000 25%, #000 100%);
   background-repeat: no-repeat;
   background-position: 0% 30%;
   background-size: cover;
-  background-image: url("/public/assets/imagenes/fondo_puntos-02.png");
-  margin-top: auto;
+  /* margin-top: auto; */
+  width: 100%;
 }
+
+.experiencias-section {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 40px;
+  width: 100%;
+  margin-top: auto;
+  padding-bottom: 100px;
+}
+
+.experiencias-title {
+  font-weight: 800;
+  font-size: 44px;
+  width: clamp(200px, 750px, 100%);
+}
+
+/* .experiencias-title > p {
+  color: var(--red-highlight);
+} */

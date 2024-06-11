@@ -280,6 +280,15 @@
 }
 
 .clientes-section img {
-  /* width: 70px; */
-  height: 60px;
+  height: calc(100vw / 24);
+}
+
+.clientes-logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-inline: auto;
+  max-width: 90%;
+  overflow: hidden;
+  margin: 24px 0px 36px 0px;
 }

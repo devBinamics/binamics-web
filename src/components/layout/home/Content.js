@@ -76,7 +76,6 @@ export const Content = () => {
           <span
             className="horizontal gap-8"
             style={{
-              marginBottom: 24,
               color: "white",
               marginInline: "auto",
               width: "fit-content",
@@ -88,30 +87,35 @@ export const Content = () => {
             </p>
             <span className="linea-blanca"></span>
           </span>
-          <span className="horizontal">
+          <span className="clientes-logos gap-24">
             <img
+              alt="cli-01"
               src={`${process.env.PUBLIC_URL}/assets/logos/logocliente1-04.png`}
             />
             <img
+              alt="cli-02"
               src={`${process.env.PUBLIC_URL}/assets/logos/logocliente2-05.png`}
             />
             <img
+              alt="cli-03"
               src={`${process.env.PUBLIC_URL}/assets/logos/logocliente3-06.png`}
             />
             <img
+              alt="cli-04"
               src={`${process.env.PUBLIC_URL}/assets/logos/logocliente4-07.png`}
             />
             <img
+              alt="cli-05"
               src={`${process.env.PUBLIC_URL}/assets/logos/logocliente5-08.png`}
             />
             <img
+              alt="cli-06"
               src={`${process.env.PUBLIC_URL}/assets/logos/logocliente6-09.png`}
             />
           </span>
           <button
             className="boton-mas"
             style={{
-              marginTop: 50,
               backgroundColor: "transparent",
               color: "white",
               borderColor: "white",

@@ -43,7 +43,7 @@ export const Content = () => {
             <p className="section-subtitle">
               Descubra un abanico de oportunidades mediante <br /> la
               implementación de análisis avanzados en <br />
-              inteligencia de negocio y del cliente.
+              <span className="underscore-red">inteligencia</span> de negocio y del cliente.
             </p>
             <span className="horizontal gap-16" style={{ marginTop: 50 }}>
               <button
@@ -125,6 +125,45 @@ export const Content = () => {
             <FaArrowRight />
           </button>
         </div>
+      </div>
+      <div className="clientes-section">
+        <span
+          className="horizontal gap-8"
+          style={{
+            color: "white",
+            marginInline: "auto",
+            width: "fit-content",
+          }}
+        >
+          <span className="linea-blanca"></span>
+          <p className="datos-upper-text">
+            Con base sólida de conocimientos en el agro
+          </p>
+          <span className="linea-blanca"></span>
+        </span>
+        <p
+          className="section-title"
+          style={{
+            marginInline: "auto",
+            textAlign: "center",
+            margin: "24px 0px",
+          }}
+        >
+          Nuestro aporte <br /> hace un servicio único
+        </p>
+        <p
+          className="section-subtitle"
+          style={{ textAlign: "center", color: "white" }}
+        >
+          Somos una empresa qe transforma tu negocio utilizando el motor del
+          <span className="underscore-red"> cambio</span> "los datos". <br />
+          Con un equipo de profesionales apasionado por la innovación, conocemos
+          la capacidad que tienen <br />
+          los datos para revolucionar industrias y optimizar procesos, usamos
+          tecnología propia y también de <br /> Partners para ofrecer productos
+          únicos y de vanguardia diseñados para mejorar la eficiencia y <br />
+          facilitar la toma de decisiones.
+        </p>
       </div>
       <div className="experiencias-section">
         <p className="experiencias-title">

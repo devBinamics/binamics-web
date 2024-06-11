@@ -288,7 +288,7 @@
   flex-direction: row;
   align-items: center;
   margin-inline: auto;
-  max-width: 90%;
+  /* max-width: 90%; */
   overflow: hidden;
   margin: 24px 0px 36px 0px;
 }

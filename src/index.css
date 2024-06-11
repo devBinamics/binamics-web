@@ -13,6 +13,14 @@ code {
     monospace;
 }
 
+button {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -33,6 +41,29 @@ code {
   --red-highlight: #e52023;
   --green-highlight: #7db729;
   --yellow-highlight: #e4e026;
-  --grey: #585a5c
+  --grey: #585a5c;
   /*  */
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background: transparent;
+  height: 5px;
+  /* display: none; */
+}
+::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+::-webkit-scrollbar-track-horizontal {
+  background: transparent;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb-horizontal {
+  background: #aaa;
+  border-radius: 8px;
 }

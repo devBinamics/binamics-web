@@ -1,5 +1,6 @@
-import { HiOutlineArrowSmRight } from "react-icons/hi";
+
 import "./meet.css";
+import { FaArrowRight } from "react-icons/fa";
 
 export const Meet = () => {
   return (
@@ -10,7 +11,7 @@ export const Meet = () => {
         </p>
         <button className="boton-meet">
           <p>Solicitar una reunión</p>
-          <HiOutlineArrowSmRight />
+          <FaArrowRight />
         </button>
       </div>
     </section>

@@ -6,8 +6,8 @@
   background-color: var(--dark-background);
 }
 
-.logo-section {
-}
+/* .logo-section {
+} */
 
 .rutas-section {
   display: flex;
@@ -26,6 +26,7 @@ a {
 
 .rutas-section > a {
   line-height: 34px;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .boton-contacto {

@@ -13,7 +13,12 @@ export const Header = () => {
         <a href="#about">Acerca de</a>
         <a href="#cases">Casos de éxito</a>
         <a href="#blog">Blog</a>
-        <button className="boton-contacto">Contacto</button>
+        <button
+          className="boton-generico boton-rojo"
+          style={{ borderColor: "var(--red-highlight)" }}
+        >
+          Solicitar demo
+        </button>
       </span>
     </header>
   );

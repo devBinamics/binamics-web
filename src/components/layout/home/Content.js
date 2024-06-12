@@ -26,7 +26,7 @@ export const Content = () => {
   return (
     <>
       <div className="top-section-background">
-        <div className="datos-section">
+        <section className="datos-section">
           <div className="columna">
             <span className="horizontal gap-8" style={{ marginBottom: 24 }}>
               <span className="linea-blanca"></span>
@@ -43,24 +43,83 @@ export const Content = () => {
             <p className="section-subtitle">
               Descubra un abanico de oportunidades mediante <br /> la
               implementación de análisis avanzados en <br />
-              <span className="underscore-red">inteligencia</span> de negocio y del cliente.
+              <span className="underscore-red">
+                inteligencia
+                {false ? (
+                  <svg
+                    width="100"
+                    height="10"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    {/* <text x="10" y="40" font-size="24" fill="white">
+                    inteligencia
+                  </text> */}
+                    <path
+                      d="M0 9 Q70 0 90 9"
+                      fill="none"
+                      stroke="red"
+                      strokeWidth="3.5"
+                    />
+                  </svg>
+                ) : (
+                  <svg
+                    width="90"
+                    height="10"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    {/* centro top */}
+                    <path
+                      d="M20 8 Q70 0 80 8"
+                      fill="none"
+                      stroke="red"
+                      strokeWidth="2"
+                      opacity="0.85"
+                    />
+                    {/* centro bottom */}
+                    <path
+                      d="M20 8 Q70 3 80 7"
+                      fill="none"
+                      stroke="red"
+                      strokeWidth="2"
+                      opacity="0.8"
+                    />
+                    <path
+                      d="M20 8 Q70 5 80 7"
+                      fill="none"
+                      stroke="red"
+                      strokeWidth="2"
+                      opacity="0.8"
+                    />
+                    {/* punta izq */}
+                    <path
+                      d="M0 10 Q25 8 21 8"
+                      fill="none"
+                      stroke="red"
+                      strokeWidth="2"
+                      opacity="0.8"
+                    />
+                    {/* punta der */}
+                    <path
+                      d="M79 7 Q80 8 100 10"
+                      fill="none"
+                      stroke="red"
+                      strokeWidth="2"
+                      opacity="0.8"
+                    />
+                  </svg>
+                )}
+              </span>{" "}
+              de negocio y del cliente.
             </p>
             <span className="horizontal gap-16" style={{ marginTop: 50 }}>
               <button
-                className="boton-mas"
-                style={{
-                  backgroundColor: "var(--red-highlight)",
-                  color: "white",
-                }}
+                className="boton-generico boton-rojo"
               >
                 Inteligencia del negocio
               </button>
               <button
-                className="boton-mas"
-                style={{
-                  backgroundColor: "var(--green-highlight)",
-                  color: "white",
-                }}
+                className="boton-generico boton-verde"
+
               >
                 Inteligencia del cliente
               </button>
@@ -68,10 +127,10 @@ export const Content = () => {
           </div>
           <img
             className="img-tableros"
-            src={`${process.env.PUBLIC_URL}/assets/imagenes/esquematableros-03.png`}
+            src={`${process.env.PUBLIC_URL}/assets/imagenes/esquematableros.png`}
             alt="tableros"
           />
-        </div>
+        </section>
         <div className="clientes-section">
           <span
             className="horizontal gap-8"
@@ -113,58 +172,67 @@ export const Content = () => {
               src={`${process.env.PUBLIC_URL}/assets/logos/logocliente6-09.png`}
             />
           </span>
-          <button
-            className="boton-mas"
-            style={{
-              backgroundColor: "transparent",
-              color: "white",
-              borderColor: "white",
-            }}
-          >
+          <button className="boton-generico boton-negros">
             <p>Leer casos de éxito</p>
             <FaArrowRight />
           </button>
         </div>
-      </div>
-      <div className="clientes-section">
-        <span
-          className="horizontal gap-8"
-          style={{
-            color: "white",
-            marginInline: "auto",
-            width: "fit-content",
-          }}
-        >
-          <span className="linea-blanca"></span>
-          <p className="datos-upper-text">
-            Con base sólida de conocimientos en el agro
+        <div className="clientes-section">
+          <span
+            className="horizontal gap-8"
+            style={{
+              color: "white",
+              marginInline: "auto",
+              width: "fit-content",
+            }}
+          >
+            <span className="linea-blanca"></span>
+            <p className="datos-upper-text">
+              Con base sólida de conocimientos en el agro
+            </p>
+            <span className="linea-blanca"></span>
+          </span>
+          <p
+            className="section-title"
+            style={{
+              marginInline: "auto",
+              textAlign: "center",
+              margin: "2rem 0px",
+            }}
+          >
+            Nuestro aporte <br /> hace un servicio único
           </p>
-          <span className="linea-blanca"></span>
-        </span>
-        <p
-          className="section-title"
-          style={{
-            marginInline: "auto",
-            textAlign: "center",
-            margin: "24px 0px",
-          }}
-        >
-          Nuestro aporte <br /> hace un servicio único
-        </p>
-        <p
-          className="section-subtitle"
-          style={{ textAlign: "center", color: "white" }}
-        >
-          Somos una empresa qe transforma tu negocio utilizando el motor del
-          <span className="underscore-red"> cambio</span> "los datos". <br />
-          Con un equipo de profesionales apasionado por la innovación, conocemos
-          la capacidad que tienen <br />
-          los datos para revolucionar industrias y optimizar procesos, usamos
-          tecnología propia y también de <br /> Partners para ofrecer productos
-          únicos y de vanguardia diseñados para mejorar la eficiencia y <br />
-          facilitar la toma de decisiones.
-        </p>
+          <p
+            className="section-subtitle"
+            style={{ textAlign: "center", color: "white" }}
+          >
+            Somos una empresa qe transforma tu negocio utilizando el motor del{" "}
+            <span className="underscore-red">
+              cambio
+              <svg width="100%" height="10" xmlns="http://www.w3.org/2000/svg">
+                {/* <text x="10" y="40" font-size="24" fill="white">
+                    inteligencia
+                  </text> */}
+                <path
+                  d="M0 9 Q40 0 60 9"
+                  fill="none"
+                  stroke="red"
+                  strokeWidth="3.5"
+                />
+              </svg>
+            </span>{" "}
+            "los datos". <br />
+            Con un equipo de profesionales apasionado por la innovación,
+            conocemos la capacidad que tienen <br />
+            los datos para revolucionar industrias y optimizar procesos, usamos
+            tecnología propia y también de <br /> Partners para ofrecer
+            productos únicos y de vanguardia diseñados para mejorar la
+            eficiencia y <br />
+            facilitar la toma de decisiones.
+          </p>
+        </div>
       </div>
+
       <div className="experiencias-section">
         <p className="experiencias-title">
           <span>
@@ -188,7 +256,9 @@ export const Content = () => {
                   </p>
                   <span className="span-subscripcion">
                     <p>Introduce tu correo electrónico</p>
-                    <button>Suscribir</button>
+                    <button className="boton-generico boton-blanco">
+                      Suscribir
+                    </button>
                   </span>
                 </div>
               );
@@ -209,7 +279,7 @@ export const Content = () => {
                     </div>
                   </div>
                   <button
-                    className="boton-mas"
+                    className="boton-generico boton-blanco"
                     style={{ marginTop: 50, marginBottom: 100 }}
                   >
                     <p>Leer mas experiencias</p>

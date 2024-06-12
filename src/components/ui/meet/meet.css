@@ -1,5 +1,5 @@
 .meet-wrapper {
-  padding: 0px 40px;
+  padding: 0px 5%;
 }
 
 .meet-box {
@@ -17,4 +17,5 @@
   font-weight: 800;
   margin-bottom: 24px;
   width: 80%;
+  letter-spacing: -0.5px;
 }

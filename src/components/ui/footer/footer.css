@@ -1,7 +1,7 @@
 .footer-wrapper {
   display: flex;
   flex-direction: row;
-  padding: 40px;
+  padding: 40px 5%;
   margin-top: 50px;
   font-size: 14px;
   color: var(--light-background);
@@ -25,9 +25,10 @@
 }
 
 .logo-binamics {
-  height: 40px;
+  height: 32px;
   object-fit: contain;
   width: fit-content;
+  margin-left: -6px;
 }
 
 .footer-text {

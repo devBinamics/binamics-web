@@ -45,82 +45,18 @@ export const Content = () => {
               implementación de análisis avanzados en <br />
               <span className="underscore-red">
                 inteligencia
-                {false ? (
-                  <svg
-                    width="100"
-                    height="10"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    {/* <text x="10" y="40" font-size="24" fill="white">
-                    inteligencia
-                  </text> */}
-                    <path
-                      d="M0 9 Q70 0 90 9"
-                      fill="none"
-                      stroke="red"
-                      strokeWidth="3.5"
-                    />
-                  </svg>
-                ) : (
-                  <svg
-                    width="90"
-                    height="10"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    {/* centro top */}
-                    <path
-                      d="M20 8 Q70 0 80 8"
-                      fill="none"
-                      stroke="red"
-                      strokeWidth="2"
-                      opacity="0.85"
-                    />
-                    {/* centro bottom */}
-                    <path
-                      d="M20 8 Q70 3 80 7"
-                      fill="none"
-                      stroke="red"
-                      strokeWidth="2"
-                      opacity="0.8"
-                    />
-                    <path
-                      d="M20 8 Q70 5 80 7"
-                      fill="none"
-                      stroke="red"
-                      strokeWidth="2"
-                      opacity="0.8"
-                    />
-                    {/* punta izq */}
-                    <path
-                      d="M0 10 Q25 8 21 8"
-                      fill="none"
-                      stroke="red"
-                      strokeWidth="2"
-                      opacity="0.8"
-                    />
-                    {/* punta der */}
-                    <path
-                      d="M79 7 Q80 8 100 10"
-                      fill="none"
-                      stroke="red"
-                      strokeWidth="2"
-                      opacity="0.8"
-                    />
-                  </svg>
-                )}
+                <img
+                style={{}}
+                  src={`${process.env.PUBLIC_URL}/assets/imagenes/subrayado1-20.png`}
+                />
               </span>{" "}
               de negocio y del cliente.
             </p>
             <span className="horizontal gap-16" style={{ marginTop: 50 }}>
-              <button
-                className="boton-generico boton-rojo"
-              >
+              <button className="boton-generico boton-rojo">
                 Inteligencia del negocio
               </button>
-              <button
-                className="boton-generico boton-verde"
-
-              >
+              <button className="boton-generico boton-verde">
                 Inteligencia del cliente
               </button>
             </span>

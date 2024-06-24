@@ -243,12 +243,16 @@
 .span-subscripcion > button {
   font-size: 1rem;
   line-height: 1rem;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   background-color: white;
   padding: 1rem 1.5rem;
   border-radius: 2rem;
   font-weight: 600;
   margin-left: auto;
+}
+
+.span-subscripcion > button:hover {
+  border: 1px solid white;
 }
 
 .boton-generico {
@@ -291,7 +295,6 @@
 }
 
 .boton-rojo {
-  border: 1px solid var(--red-highlight);
   color: var(--light-background);
   background-color: var(--red-highlight);
   border-radius: 24px;
@@ -305,6 +308,10 @@
   color: var(--red-highlight) !important;
   background-color: white !important;
   transition: 500ms all;
+}
+
+.meet-box > button {
+  border: 1px solid white;
 }
 
 .img-tableros {
@@ -362,17 +369,17 @@
   transform: skewX(-70deg);
 } */
 
-.underscore-red svg {
+.underscore-red img {
   width: 100%;
   position: absolute;
-  top: 15px;
+  height: 12px;
+  top: 18px;
   left: 0px;
 }
 
 .boton-verde {
   background-color: var(--green-highlight);
   color: white;
-  border: 1px solid var(--green-highlight);
 }
 
 .boton-verde:hover {

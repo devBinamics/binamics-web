@@ -1,3 +1,4 @@
+import { FiMenu } from "react-icons/fi";
 import "./header.css";
 
 export const Header = () => {
@@ -19,6 +20,9 @@ export const Header = () => {
         >
           Solicitar demo
         </button>
+      </span>
+      <span className="menu-mobile pointer">
+        <FiMenu size={24} />
       </span>
     </header>
   );

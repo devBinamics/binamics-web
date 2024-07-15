@@ -34,6 +34,7 @@ export const BusinessInteligence = () => {
               <img
                 style={{}}
                 src={`${process.env.PUBLIC_URL}/assets/imagenes/subrayado2-21.png`}
+                alt="subrayado"
               />
             </span>{" "}
             y útil de tu negocio

@@ -14,7 +14,7 @@ code {
 }
 
 button {
-  font-family: inherit
+  font-family: inherit;
 }
 
 button:hover {
@@ -66,4 +66,8 @@ button:hover {
 ::-webkit-scrollbar-thumb-horizontal {
   background: #aaa;
   border-radius: 8px;
+}
+
+.pointer {
+  cursor: pointer;
 }

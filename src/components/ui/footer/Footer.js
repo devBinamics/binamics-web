@@ -37,31 +37,31 @@ export const Footer = () => {
         </div>
         <div className="footer-column">
           <p className="footer-column-title">Seguinos en</p>
-          <span className="horizontal gap-8">
+          <span className="horizontal gap-8 pointer">
             <BsLinkedin fill="white" />
             <a className="footer-text" href="#linkedin">
               Linkedin
             </a>
           </span>
-          <span className="horizontal gap-8">
+          <span className="horizontal gap-8 pointer">
             <BsInstagram />
             <a className="footer-text" href="#intagram">
               Instagram
             </a>
           </span>
-          <span className="horizontal gap-8">
+          <span className="horizontal gap-8 pointer">
             <BsMedium fill="white" />
             <a className="footer-text" href="#medium">
               Medium
             </a>
           </span>
-          <span className="horizontal gap-8">
+          <span className="horizontal gap-8 pointer">
             <BsTwitterX fill="white" />
             <a className="footer-text" href="#x">
               Twitter
             </a>
           </span>
-          <span className="horizontal gap-8">
+          <span className="horizontal gap-8 pointer">
             <BsFacebook fill="white" />
             <a className="footer-text" href="#facebook">
               Facebook

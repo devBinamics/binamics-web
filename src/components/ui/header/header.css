@@ -29,8 +29,19 @@ a {
   font-family: "Space Grotesk", sans-serif;
 }
 
+.menu-mobile {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .rutas-section {
     display: none;
+  }
+
+  .menu-mobile {
+    display: block;
+    color: white;
+    margin-left: auto;
+    height: 24px;
   }
 }

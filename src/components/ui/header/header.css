@@ -28,3 +28,9 @@ a {
 .rutas-section > a {
   font-family: "Space Grotesk", sans-serif;
 }
+
+@media (max-width: 768px) {
+  .rutas-section {
+    display: none;
+  }
+}

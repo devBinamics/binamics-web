@@ -43,5 +43,40 @@ a {
     color: white;
     margin-left: auto;
     height: 24px;
+    position: relative;
+  }
+
+  .dropdown-menu {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    position: absolute;
+    top: 24px;
+    right: 0px;
+    width: fit-content;
+    white-space: nowrap;
+    background-color: white;
+    color: var(--dark-background);
+    border-radius: 8px;
+    padding: 4px;
+    font-family: "Space Grotesk", sans-serif;
+  }
+
+  .dropdown-menu a {
+    color: var(--dark-background);
+    padding: 8px 8px;
+    border-radius: 4px;
+  }
+
+  .dropdown-menu a:hover {
+    background-color: #d8d8d8;
+  }
+
+  .dropdown-menu button {
+    border-radius: 4px;
+  }
+
+  .menu-mobile:hover .dropdown-menu {
+    display: flex;
   }
 }

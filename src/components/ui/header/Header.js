@@ -23,6 +23,18 @@ export const Header = () => {
       </span>
       <span className="menu-mobile pointer">
         <FiMenu size={24} />
+        <div className="dropdown-menu columna">
+          <a href="#productos">Productos</a>
+          <a href="#about">Acerca de</a>
+          <a href="#cases">Casos de éxito</a>
+          <a href="#blog">Blog</a>
+          <button
+            className="boton-generico boton-rojo"
+            style={{ borderColor: "var(--red-highlight)" }}
+          >
+            Solicitar demo
+          </button>
+        </div>
       </span>
     </header>
   );

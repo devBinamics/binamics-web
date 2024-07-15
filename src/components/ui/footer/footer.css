@@ -23,9 +23,9 @@
   /* width: 33.33%; */
 }
 
-.footer-wrapper > .footer-column:nth-child(1) {
-  /* width: 40%; */
-}
+/* .footer-wrapper > .footer-column:nth-child(1) {
+   width: 40%; 
+} */
 
 .footer-column-title {
   font-weight: 600;
@@ -52,7 +52,8 @@
     margin-bottom: 2rem;
   }
 
-  .footer-column, .footer-wrapper > .footer-column:nth-child(1) {
+  .footer-column,
+  .footer-wrapper > .footer-column:nth-child(1) {
     width: 100%;
     /* text-align: center; */
     align-items: center;

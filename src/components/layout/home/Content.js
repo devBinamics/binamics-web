@@ -1,4 +1,8 @@
-import { FaArrowRight, FaChevronRight } from "react-icons/fa";
+import { FaArrowRight, FaChevronRight, FaHeart } from "react-icons/fa";
+import { BusinessInteligence } from "./BusinessInteligence";
+import { TbUserScan } from "react-icons/tb";
+import { IoStar } from "react-icons/io5";
+import { GrGrow } from "react-icons/gr";
 
 const cards = [
   {
@@ -26,7 +30,7 @@ export const Content = () => {
   return (
     <>
       <div className="top-section-background">
-        <section className="datos-section">
+        <section className="dark-section">
           <div className="columna">
             <span className="horizontal gap-8" style={{ marginBottom: 24 }}>
               <span className="linea-blanca"></span>
@@ -46,7 +50,7 @@ export const Content = () => {
               <span className="underscore-red">
                 inteligencia
                 <img
-                style={{}}
+                  alt="subrayado"
                   src={`${process.env.PUBLIC_URL}/assets/imagenes/subrayado1-20.png`}
                 />
               </span>{" "}
@@ -67,7 +71,7 @@ export const Content = () => {
             alt="tableros"
           />
         </section>
-        <div className="clientes-section">
+        <div className="clientes-section" style={{ marginBottom: 50 }}>
           <span
             className="horizontal gap-8"
             style={{
@@ -108,12 +112,12 @@ export const Content = () => {
               src={`${process.env.PUBLIC_URL}/assets/logos/logocliente6-09.png`}
             />
           </span>
-          <button className="boton-generico boton-negros">
+          <button className="boton-generico boton-negro">
             <p>Leer casos de éxito</p>
             <FaArrowRight />
           </button>
         </div>
-        <div className="clientes-section">
+        <section className="clientes-section">
           <span
             className="horizontal gap-8"
             style={{
@@ -136,26 +140,20 @@ export const Content = () => {
               margin: "2rem 0px",
             }}
           >
-            Nuestro aporte <br /> hace un servicio único
+            Nuestro aporte, <br /> hace un servicio único
           </p>
           <p
             className="section-subtitle"
             style={{ textAlign: "center", color: "white" }}
           >
-            Somos una empresa qe transforma tu negocio utilizando el motor del{" "}
+            Somos una empresa qe transforma tu negocio utilizando el
             <span className="underscore-red">
-              cambio
-              <svg width="100%" height="10" xmlns="http://www.w3.org/2000/svg">
-                {/* <text x="10" y="40" font-size="24" fill="white">
-                    inteligencia
-                  </text> */}
-                <path
-                  d="M0 9 Q40 0 60 9"
-                  fill="none"
-                  stroke="red"
-                  strokeWidth="3.5"
-                />
-              </svg>
+              {" "}
+              motor del cambio
+              <img
+                alt="subrayado"
+                src={`${process.env.PUBLIC_URL}/assets/imagenes/subrayado2-21.png`}
+              />
             </span>{" "}
             "los datos". <br />
             Con un equipo de profesionales apasionado por la innovación,
@@ -166,9 +164,72 @@ export const Content = () => {
             eficiencia y <br />
             facilitar la toma de decisiones.
           </p>
+        </section>
+        <div
+          className="dark-section"
+          style={{ padding: 0, alignItems: "flex-end" }}
+        >
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/imagenes/equipo-10.png`}
+            className="imagen-equipo"
+            alt="equipo"
+          />
+          <div className="descripcion-equipo-wrapper">
+            <div className="descripcion-equipo-layout">
+              <span className="descripcion-equipo-item">
+                <span className="horizontal gap-4">
+                  <FaHeart size={24} />
+                  <p className="equipo-item-title">+13 años</p>
+                </span>
+                <span className="equipo-item-subtitle">
+                  Creación <br />
+                  de binamics
+                </span>
+              </span>
+              <span className="descripcion-equipo-item">
+                <span className="horizontal gap-4">
+                  <GrGrow size={24} />
+                  <p className="equipo-item-title">25 años</p>
+                </span>
+                <span className="equipo-item-subtitle">
+                  Experiencia <br />
+                  en el Agro
+                </span>
+              </span>
+              <span className="descripcion-equipo-item">
+                <span className="horizontal gap-4">
+                  <IoStar size={24} />
+                  <p className="equipo-item-title">4.7</p>
+                </span>
+                <span className="equipo-item-subtitle">
+                  Calificación <br />
+                  de Clientes
+                </span>
+              </span>
+              <span className="descripcion-equipo-item">
+                <span className="horizontal gap-4">
+                  <TbUserScan size={24} />
+                  <p className="equipo-item-title">+50</p>
+                </span>
+                <span className="equipo-item-subtitle">
+                  Clientes <br />
+                  Activos
+                </span>
+              </span>
+            </div>
+            <div className="horizontal gap-16" style={{ marginTop: "2rem" }}>
+              <button className="boton-generico boton-negro">
+                <p>Más sobre nosotros</p>
+                <FaArrowRight />
+              </button>
+              <button className="boton-generico boton-negro">
+                <p>Descargar pdf institucional</p>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-
+      <BusinessInteligence />
       <div className="experiencias-section">
         <p className="experiencias-title">
           <span>

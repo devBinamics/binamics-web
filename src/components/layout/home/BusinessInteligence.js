@@ -58,7 +58,11 @@ export const BusinessInteligence = () => {
       <div className="bi-menu">
         {MENU.map((element, index) => {
           return (
-            <span className="bi-menu-item" key={index}>
+            <span
+              className="bi-menu-item"
+              key={index}
+              style={index === MENU.length - 1 ? { borderBottom: "none" } : {}}
+            >
               <p>{element.title}</p>
               <FaChevronRight size={16} />
             </span>

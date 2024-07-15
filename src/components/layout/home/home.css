@@ -385,7 +385,7 @@
   flex-direction: row;
   align-items: center;
   width: clamp(200px, 500px, 100%);
-  border-bottom: 1px solid var(--grey);
+  border-bottom: 1px solid #d8d8d8;
   padding: 1rem 0px;
   justify-content: space-between;
 }

@@ -22,6 +22,7 @@ export const Footer = () => {
         <p className="footer-text">Santa Fe 1238</p>
         <p className="footer-text">Teléfono: (+54) 0353 4002-967</p>
       </div>
+      <div className="footer-secondary">
         <div className="footer-column">
           <p className="footer-column-title">Qué hacemos</p>
           <p className="footer-text">Inteligencia de negocios</p>
@@ -68,6 +69,7 @@ export const Footer = () => {
             </a>
           </span>
         </div>
+      </div>
     </footer>
   );
 };

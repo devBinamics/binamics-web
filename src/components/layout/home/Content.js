@@ -26,6 +26,29 @@ const cards = [
   },
 ];
 
+const business_cards = [
+  {
+    title: "Recopilación y Análisis",
+    subtitle:
+      "Usa herramientas de CRM y plataformas de datos para consolidar y analizar información del cliente, identificando patrones y preferencias.",
+  },
+  {
+    title: "Segmentación de Clientes",
+    subtitle:
+      "Crea procesos de marketing a traves de chatbots para mejorar la eficiencia operativa, reducir costos, ahorras tiempo y captar potenciales clientes.",
+  },
+  {
+    title: "Call to Action",
+    subtitle:
+      "Utiliza chatbots para guiar a tu audiencia hacia acciones específicas. Compra de un producto, información actualizada sobre el mercado, precios de los productos, entre otros.",
+  },
+  {
+    title: "Feedback Continuo y Ajustes",
+    subtitle:
+      "Utilice chatbots para recopilar feedback de los clientes y mejorar las estrategias de ventas basándose en sus opiniones.",
+  },
+];
+
 export const Content = () => {
   return (
     <>
@@ -47,7 +70,7 @@ export const Content = () => {
             <p className="section-subtitle">
               Descubra un abanico de oportunidades mediante <br /> la
               implementación de análisis avanzados en <br />
-              <span className="underscore-red">
+              <span className="underscore">
                 inteligencia
                 <img
                   alt="subrayado"
@@ -175,7 +198,7 @@ export const Content = () => {
             style={{ textAlign: "center", color: "white" }}
           >
             Somos una empresa qe transforma tu negocio utilizando el
-            <span className="underscore-red">
+            <span className="underscore">
               {" "}
               motor del cambio
               <img
@@ -258,7 +281,151 @@ export const Content = () => {
         </div>
       </div>
       <BusinessInteligence />
-      <div className="experiencias-section">
+      <section className="meet-wrapper" style={{ position: "relative" }}>
+        <div
+          className="meet-box"
+          style={{
+            backgroundColor: "var(--blue-highlight)",
+            transform: "translateY(-8rem)",
+          }}
+        >
+          <p className="meet-title">Tomá decisiones inteligentes</p>
+          <p className="color-card-subtitle">
+            Sin tareas manuales ni rutinarias que demanden mucho tiempo.
+          </p>
+          <span className="horizontal gap-16">
+            <button
+              className="boton-generico boton-azul"
+              style={{ borderColor: "white" }}
+            >
+              <p>Mire cómo funciona</p>
+              <FaArrowRight />
+            </button>
+            <button
+              className="boton-generico boton-azul"
+              style={{ borderColor: "white" }}
+            >
+              <p>Descargar pdf BI</p>
+              <FaArrowRight />
+            </button>
+          </span>
+        </div>
+        <img
+          src={`${process.env.PUBLIC_URL}/assets/imagenes/avatargerente-10.png`}
+          alt="bi"
+          className="bi-image"
+        />
+      </section>
+      <section className="dark-section">
+        <img
+          className="img-tableros"
+          src={`${process.env.PUBLIC_URL}/assets/imagenes/seccionbrocoly-06.png`}
+          alt="tableros"
+        />
+        <div className="columna">
+          <span className="horizontal gap-8" style={{ marginBottom: 24 }}>
+            <span className="linea-blanca"></span>
+            <p className="datos-upper-text">Inteligencia del cliente</p>
+          </span>
+          <p className="section-title">
+            <span>
+              Impulse las ventas <br />
+              y la satisfacción <br />
+              del{" "}
+              <span style={{ color: "var(--green-highlight)" }}> cliente</span>
+            </span>
+          </p>
+
+          <p className="section-subtitle">
+            integre la inteligencia del cliente en sus estrategias <br />
+            de marketing para mejorar la comunicación y <br />
+            <span className="underscore">
+              aumentar las ventas
+              <img
+                alt="subrayado"
+                src={`${process.env.PUBLIC_URL}/assets/imagenes/subrayado-22.png`}
+              />
+            </span>{" "}
+            y la satisfacción del cliente <br />
+            de manera significativa
+          </p>
+          <span className="horizontal gap-16" style={{ marginTop: 50 }}>
+            <button className="boton-generico boton-negro">
+              <p>Saber más</p>
+              <FaArrowRight />
+            </button>
+            <button className="boton-generico boton-negro">
+              <p>Solicitar demo</p>
+              <FaArrowRight />
+            </button>
+          </span>
+        </div>
+      </section>
+      <section className="dark-section">
+        <p
+          className="section-title"
+          style={{ width: "100%", textAlign: "center" }}
+        >
+          <span>
+            Piensa como cliente, <br />
+            el{" "}
+            <span style={{ color: "var(--green-highlight)" }}>
+              {" "}
+              diferenciador clave
+            </span>{" "}
+            que <br />
+            impulsa el éxito de su negocio
+          </span>
+        </p>
+      </section>
+      <section
+        className="dark-section"
+        style={{
+          position: "relative",
+          paddingBottom: "5rem",
+          alignItems: "stretch",
+        }}
+      >
+        <div className="business-cards-layout">
+          {business_cards.map((element) => {
+            return (
+              <div className="business-card" key={element.title}>
+                <p>{element.title}</p>
+                <p>{element.subtitle}</p>
+              </div>
+            );
+          })}
+        </div>
+        <div className="brocoly-info">
+          <img
+            alt="logo-brocoly"
+            src={`${process.env.PUBLIC_URL}/assets/imagenes/logobrocoly-16.png`}
+            style={{ height: "5rem", marginLeft: "-1rem" }}
+          />
+          <p className="brocoly-subtitle">Whatsapp + Chatbot + CRM</p>
+          <p className="brocoly-description">
+            Utiliza la información para mejorar continuamente la experiencia del
+            cliente. Los datos permitirán identificar áreas de oportunidades,
+            valorizar los clientes y tomar decisiones que aumenten su
+            satisfacción y compromiso.
+          </p>
+          <span className="horizontal gap-16">
+            <button className="boton-generico boton-oscuro">
+              <p>Mire cómo funciona</p>
+              <FaArrowRight />
+            </button>
+            <button className="boton-generico boton-oscuro">
+              <p>Descargar pdf brocoly</p>
+            </button>
+          </span>
+        </div>
+        <img
+          alt="whatsapp"
+          src={`${process.env.PUBLIC_URL}/assets/imagenes/seccionbrocoly-05.png`}
+          className="image-brocoly-whatsapp"
+        />
+      </section>
+      <section className="experiencias-section">
         <p className="experiencias-title">
           <span>
             Experiencias y <br />
@@ -329,7 +496,7 @@ export const Content = () => {
             );
           })}
         </div>
-      </div>
+      </section>
     </>
   );
 };

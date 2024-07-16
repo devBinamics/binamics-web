@@ -29,7 +29,7 @@ export const BusinessInteligence = () => {
           <p className="section-subtitle">
             Descubra como se puede utilizar la inteligencia de Negocios para
             transformar la información en{" "}
-            <span className="underscore-red">
+            <span className="underscore">
               conocimiento significativo
               <img
                 style={{}}
@@ -54,6 +54,7 @@ export const BusinessInteligence = () => {
           className="img-tableros"
           src={`${process.env.PUBLIC_URL}/assets/imagenes/tablerobi-04.png`}
           alt="tableros"
+          style={{ zIndex: 2 }}
         />
       </section>
       <div className="bi-menu">

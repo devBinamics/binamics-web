@@ -44,6 +44,13 @@
   line-height: 24px;
 }
 
+.footer-secondary {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 @media (max-width: 768px) {
   .footer-wrapper {
     flex-direction: column;
@@ -52,10 +59,17 @@
     margin-bottom: 2rem;
   }
 
-  .footer-column,
   .footer-wrapper > .footer-column:nth-child(1) {
     width: 100%;
     /* text-align: center; */
     align-items: center;
+  }
+
+  .footer-secondary {
+    width: 100%;
+  }
+
+  .footer-secondary > .footer-column {
+    text-align: left;
   }
 }

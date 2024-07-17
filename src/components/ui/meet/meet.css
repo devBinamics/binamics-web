@@ -1,5 +1,6 @@
 .meet-wrapper {
   padding: 0px 5%;
+  position: relative;
 }
 
 .meet-box {
@@ -9,13 +10,14 @@
   color: white;
   background-color: var(--red-highlight);
   border-radius: 36px;
+
 }
 
 .meet-title {
   font-size: 2.75rem;
   line-height: 2.75rem;
   font-weight: 800;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
   width: 80%;
   letter-spacing: -0.5px;
 }

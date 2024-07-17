@@ -81,7 +81,7 @@ export const Content = () => {
             </p>
             <span className="horizontal gap-16" style={{ marginTop: 50 }}>
               <button className="boton-generico boton-rojo">
-                Inteligencia del negocio
+                Inteligencia de negocios
               </button>
               <button className="boton-generico boton-verde">
                 Inteligencia del cliente
@@ -94,7 +94,7 @@ export const Content = () => {
             alt="tableros"
           />
         </section>
-        <div className="clientes-section" style={{ marginBottom: 50 }}>
+        <div className="clientes-section">
           <span
             className="horizontal gap-8"
             style={{
@@ -216,7 +216,7 @@ export const Content = () => {
             facilitar la toma de decisiones.
           </p>
         </section>
-        <div
+        <section
           className="dark-section"
           style={{ padding: 0, alignItems: "flex-end" }}
         >
@@ -278,106 +278,111 @@ export const Content = () => {
               </button>
             </div>
           </div>
-        </div>
+        </section>
       </div>
       <BusinessInteligence />
-      <section className="meet-wrapper" style={{ position: "relative" }}>
-        <div
-          className="meet-box"
-          style={{
-            backgroundColor: "var(--blue-highlight)",
-            transform: "translateY(-8rem)",
-          }}
-        >
-          <p className="meet-title">Tomá decisiones inteligentes</p>
-          <p className="color-card-subtitle">
-            Sin tareas manuales ni rutinarias que demanden mucho tiempo.
-          </p>
-          <span className="horizontal gap-16">
-            <button
-              className="boton-generico boton-azul"
-              style={{ borderColor: "white" }}
-            >
-              <p>Mire cómo funciona</p>
-              <FaArrowRight />
-            </button>
-            <button
-              className="boton-generico boton-azul"
-              style={{ borderColor: "white" }}
-            >
-              <p>Descargar pdf BI</p>
-              <FaArrowRight />
-            </button>
-          </span>
-        </div>
-        <img
-          src={`${process.env.PUBLIC_URL}/assets/imagenes/avatargerente-10.png`}
-          alt="bi"
-          className="bi-image"
-        />
-      </section>
-      <section className="dark-section">
-        <img
-          className="img-tableros"
-          src={`${process.env.PUBLIC_URL}/assets/imagenes/seccionbrocoly-06.png`}
-          alt="tableros"
-        />
-        <div className="columna">
-          <span className="horizontal gap-8" style={{ marginBottom: 24 }}>
-            <span className="linea-blanca"></span>
-            <p className="datos-upper-text">Inteligencia del cliente</p>
-          </span>
-          <p className="section-title">
+      <div className="top-section-background">
+        <section className="meet-wrapper">
+          <div
+            className="meet-box"
+            style={{
+              backgroundColor: "var(--blue-highlight)",
+              transform: "translateY(-8rem)",
+            }}
+          >
+            <p className="meet-title">Tomá decisiones inteligentes</p>
+            <p className="color-card-subtitle">
+              Sin tareas manuales ni rutinarias que demanden mucho tiempo.
+            </p>
+            <span className="horizontal gap-16">
+              <button
+                className="boton-generico boton-azul"
+                style={{ borderColor: "white" }}
+              >
+                <p>Mire cómo funciona</p>
+                <FaArrowRight />
+              </button>
+              <button
+                className="boton-generico boton-azul"
+                style={{ borderColor: "white" }}
+              >
+                <p>Descargar pdf BI</p>
+                <FaArrowRight />
+              </button>
+            </span>
+          </div>
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/imagenes/avatargerente-10.png`}
+            alt="bi"
+            className="bi-image"
+          />
+        </section>
+        <section className="dark-section">
+          <img
+            className="img-tableros"
+            src={`${process.env.PUBLIC_URL}/assets/imagenes/seccionbrocoly-06.png`}
+            alt="tableros"
+          />
+          <div className="columna">
+            <span className="horizontal gap-8" style={{ marginBottom: 24 }}>
+              <span className="linea-blanca"></span>
+              <p className="datos-upper-text">Inteligencia del cliente</p>
+            </span>
+            <p className="section-title">
+              <span>
+                Impulse las ventas <br />
+                y la satisfacción <br />
+                del{" "}
+                <span style={{ color: "var(--green-highlight)" }}>
+                  {" "}
+                  cliente
+                </span>
+              </span>
+            </p>
+
+            <p className="section-subtitle">
+              integre la inteligencia del cliente en sus estrategias <br />
+              de marketing para mejorar la comunicación y <br />
+              <span className="underscore">
+                aumentar las ventas
+                <img
+                  alt="subrayado"
+                  src={`${process.env.PUBLIC_URL}/assets/imagenes/subrayado-22.png`}
+                />
+              </span>{" "}
+              y la satisfacción del cliente <br />
+              de manera significativa
+            </p>
+            <span className="horizontal gap-16" style={{ marginTop: 50 }}>
+              <button className="boton-generico boton-negro">
+                <p>Saber más</p>
+                <FaArrowRight />
+              </button>
+              <button className="boton-generico boton-negro">
+                <p>Solicitar demo</p>
+                <FaArrowRight />
+              </button>
+            </span>
+          </div>
+        </section>
+        <section className="dark-section">
+          <p
+            className="section-title"
+            style={{ width: "100%", textAlign: "center", marginBottom: "2rem" }}
+          >
             <span>
-              Impulse las ventas <br />
-              y la satisfacción <br />
-              del{" "}
-              <span style={{ color: "var(--green-highlight)" }}> cliente</span>
+              Piensa como cliente, <br />
+              el{" "}
+              <span style={{ color: "var(--green-highlight)" }}>
+                {" "}
+                diferenciador clave
+              </span>{" "}
+              que <br />
+              impulsa el éxito de su negocio
             </span>
           </p>
-
-          <p className="section-subtitle">
-            integre la inteligencia del cliente en sus estrategias <br />
-            de marketing para mejorar la comunicación y <br />
-            <span className="underscore">
-              aumentar las ventas
-              <img
-                alt="subrayado"
-                src={`${process.env.PUBLIC_URL}/assets/imagenes/subrayado-22.png`}
-              />
-            </span>{" "}
-            y la satisfacción del cliente <br />
-            de manera significativa
-          </p>
-          <span className="horizontal gap-16" style={{ marginTop: 50 }}>
-            <button className="boton-generico boton-negro">
-              <p>Saber más</p>
-              <FaArrowRight />
-            </button>
-            <button className="boton-generico boton-negro">
-              <p>Solicitar demo</p>
-              <FaArrowRight />
-            </button>
-          </span>
-        </div>
-      </section>
-      <section className="dark-section">
-        <p
-          className="section-title"
-          style={{ width: "100%", textAlign: "center" }}
-        >
-          <span>
-            Piensa como cliente, <br />
-            el{" "}
-            <span style={{ color: "var(--green-highlight)" }}>
-              {" "}
-              diferenciador clave
-            </span>{" "}
-            que <br />
-            impulsa el éxito de su negocio
-          </span>
-        </p>
-      </section>
+        </section>
+      </div>
       <section
         className="dark-section"
         style={{
@@ -426,6 +431,28 @@ export const Content = () => {
         />
       </section>
       <section className="experiencias-section">
+        <span className="parlante-images-wrapper">
+          <img
+            alt="parlante"
+            src={`${process.env.PUBLIC_URL}/assets/imagenes/parlante-06.png`}
+            className="parlante-image"
+          />
+          <img
+            alt="parlante"
+            src={`${process.env.PUBLIC_URL}/assets/imagenes/lineamicrofono-07.png`}
+            className="linea-microfono-image"
+          />
+          <img
+            alt="idea"
+            src={`${process.env.PUBLIC_URL}/assets/imagenes/avataridea-08.png`}
+            className="avatar-parlante-image"
+            style={{ bottom: "8rem" }}
+          />
+        </span>
+        <span className="horizontal gap-8" style={{ marginBottom: 24 }}>
+          <span className="linea-negra"></span>
+          <p className="datos-upper-text">Blog binamics</p>
+        </span>
         <p className="experiencias-title">
           <span>
             Experiencias y <br />

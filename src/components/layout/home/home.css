@@ -35,7 +35,7 @@
 
 .section-subtitle {
   font-family: "Space Grotesk", sans-serif;
-  margin: 40px 0px;
+  margin: 2.5rem 0px;
   font-size: 1.25rem;
   line-height: 1.25rem;
 }
@@ -101,6 +101,7 @@
   width: 100%;
   margin-top: auto;
   padding-bottom: 100px;
+  position: relative;
 }
 
 .experiencias-title {
@@ -118,6 +119,7 @@
   column-gap: 5%;
   width: 100%;
   margin-top: 50px;
+  z-index: 2;
 }
 
 .experiencias-card-wrapper {
@@ -126,6 +128,8 @@
   border: 1px solid #d8d8d8;
   border-radius: 12px;
   width: calc(100%);
+  position: relative;
+  z-index: 2;
 }
 
 .experiencias-card-wrapper > img {
@@ -147,6 +151,8 @@
   overflow: hidden;
   gap: 16px;
   align-items: center;
+  background-color: white;
+  border-radius: 12px;
 }
 
 .experiencias-card-text {
@@ -440,6 +446,7 @@
 #leer-mas-experiencias {
   margin-top: 50px;
   margin-bottom: 100px;
+  z-index: 3;
 }
 
 .boton-azul {
@@ -490,6 +497,38 @@
   bottom: 2rem;
   right: 0px;
   width: 25%;
+}
+.parlante-images-wrapper {
+  position: absolute;
+  /* top: 5%; */
+  right: 5%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: flex-end;
+  z-index: 1;
+}
+
+.parlante-image {
+  /* position: absolute; */
+  /* top: calc(5%);
+  right: calc(5% + 2rem); */
+  height: 33%;
+}
+
+.linea-microfono-image {
+  /* position: absolute; */
+  /* top: calc(5%); */
+  /* right: calc(35% + 2rem); */
+  height: 33%;
+  margin-right: 33%;
+}
+
+.avatar-parlante-image {
+  /* position: absolute; */
+  height: 33%;
+  z-index: 2;
 }
 
 .image-brocoly-whatsapp {
@@ -569,6 +608,21 @@ p {
 @media (max-width: 768px) {
   html {
     font-size: 14px;
+  }
+
+  .section-title {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .meet-title {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  .experiencias-title {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
   }
 
   .dark-section,
@@ -661,6 +715,10 @@ p {
   .image-brocoly-whatsapp {
     width: 50%;
     bottom: -3vw;
+  }
+
+  .parlante-images-wrapper {
+    display: none;
   }
 }
 

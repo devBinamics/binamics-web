@@ -282,7 +282,7 @@ export const Content = () => {
       </div>
       <BusinessInteligence />
       <div className="top-section-background">
-        <section className="meet-wrapper">
+        <section className="meet-wrapper" style={{ marginBottom: "-2rem" }}>
           <div
             className="meet-box"
             style={{

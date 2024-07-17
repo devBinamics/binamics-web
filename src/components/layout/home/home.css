@@ -618,11 +618,17 @@ p {
   .meet-title {
     font-size: 2.5rem;
     line-height: 2.5rem;
+    width: 100%;
   }
 
   .experiencias-title {
     font-size: 2.5rem;
     line-height: 2.5rem;
+  }
+
+  .color-card-subtitle {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
   }
 
   .dark-section,

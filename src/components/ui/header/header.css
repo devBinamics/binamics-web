@@ -25,8 +25,9 @@ a {
   color: var(--light-background);
 }
 
-.rutas-section > a {
+.rutas-section > a, .rutas-section > p {
   font-family: "Space Grotesk", sans-serif;
+  cursor: pointer;
 }
 
 .menu-mobile {

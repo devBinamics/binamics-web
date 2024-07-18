@@ -1,13 +1,9 @@
 import { FiMenu } from "react-icons/fi";
 import "./header.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigateAndScroll } from "../../../hooks/useNavigateAndScroll";
 
 export const Header = () => {
-  const navigate = useNavigate();
-
-  const handleNavigate = (route) => {
-    navigate(route);
-  };
+  const navigateAndScroll = useNavigateAndScroll();
 
   return (
     <header className="header-wrapper">
@@ -15,13 +11,15 @@ export const Header = () => {
         src={`${process.env.PUBLIC_URL}/assets/logos/logo-binamics-blanco.png`}
         alt="logo-empresa"
         className="logo-binamics pointer"
-        onClick={() => handleNavigate("/")}
+        onClick={() => navigateAndScroll("/")}
       />
       <span className="rutas-section">
-        <a href="#productos">Productos</a>
-        <a href="/about">Acerca de</a>
-        <a href="/success-stories">Casos de éxito</a>
-        <a href="/#blog">Blog</a>
+        <p href="#productos">Productos</p>
+        <p onClick={() => navigateAndScroll("/about")}>Acerca de</p>
+        <p onClick={() => navigateAndScroll("/success-stories")}>
+          Casos de éxito
+        </p>
+        <p onClick={() => navigateAndScroll("/", "blog")}>Blog</p>
         <button
           className="boton-generico boton-rojo"
           style={{ borderColor: "var(--red-highlight)" }}
@@ -32,10 +30,12 @@ export const Header = () => {
       <span className="menu-mobile pointer">
         <FiMenu size={24} />
         <div className="dropdown-menu columna">
-          <a href="#productos">Productos</a>
-          <a href="/about">Acerca de</a>
-          <a href="/success-stories">Casos de éxito</a>
-          <a href="/#blog">Blog</a>
+          <p href="#productos">Productos</p>
+          <p onClick={() => navigateAndScroll("/about")}>Acerca de</p>
+          <p onClick={() => navigateAndScroll("/success-stories")}>
+            Casos de éxito
+          </p>
+          <p onClick={() => navigateAndScroll("/", "blog")}>Blog</p>
           <button
             className="boton-generico boton-rojo"
             style={{ borderColor: "var(--red-highlight)" }}

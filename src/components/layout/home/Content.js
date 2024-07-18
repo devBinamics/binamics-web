@@ -430,7 +430,7 @@ export const Content = () => {
           className="image-brocoly-whatsapp"
         />
       </section>
-      <section className="experiencias-section">
+      <section className="experiencias-section" id="blog">
         <span className="parlante-images-wrapper">
           <img
             alt="parlante"

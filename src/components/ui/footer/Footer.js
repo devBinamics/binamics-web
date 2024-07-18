@@ -6,16 +6,24 @@ import {
   BsTwitterX,
 } from "react-icons/bs";
 import "./footer.css";
+import { useNavigate } from "react-router-dom";
 
 export const Footer = () => {
+  const navigate = useNavigate();
+
+  const handleNavigate = (route) => {
+    navigate(route);
+  };
+
   return (
     <footer className="footer-wrapper">
       <div className="footer-column">
         <img
-          className="logo-binamics"
+          className="logo-binamics pointer"
           style={{ marginBottom: 24, marginLeft: "-6px" }}
           src={`${process.env.PUBLIC_URL}/assets/logos/logo-binamics-blanco.png`}
           alt="logo-empresa"
+          onClick={() => handleNavigate("/")}
         />
         <p className="footer-column-title">Oficina</p>
         <p className="footer-text">Villa María, Córdoba</p>

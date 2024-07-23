@@ -131,22 +131,17 @@ export const BusinessInteligence = () => {
               >
                 <span
                   className="horizontal"
-                  style={{ justifyContent: "space-between", width: "100%" }}
+                  style={{
+                    justifyContent: "space-between",
+                    width: "100%",
+                    fontSize: "1.125rem",
+                  }}
                 >
                   <p style={{ fontWeight: 500 }}>{element.title}</p>
-                  {!open ? (
-                    <FaChevronRight
-                      size={16}
-                      className="desplegable-right"
-                      onClick={() => handleDesplegables(element.index)}
-                    />
-                  ) : (
-                    <FaChevronRight
-                      size={16}
-                      className="desplegable-down"
-                      onClick={() => handleDesplegables(element.index)}
-                    />
-                  )}
+                  <FaChevronRight
+                    className={!open ? "desplegable-right" : "desplegable-down"}
+                    onClick={() => handleDesplegables(element.index)}
+                  />
                 </span>
                 {open && (
                   <span className="desplegables">

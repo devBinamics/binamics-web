@@ -1,16 +1,75 @@
+import { useState } from "react";
 import { FaArrowRight, FaChevronRight } from "react-icons/fa";
 
 const MENU = [
-  { title: "Integración y Acceso a Datos en Tiempo Real" },
-  { title: "Análisis Descriptivo" },
-  { title: "Visualización de Datos y Dashboards Interactivos" },
-  { title: "Democratización de la Información" },
-  { title: "Mejora Continua y Optimización de Procesos" },
-  { title: "Fomento de una Cultura Orientada a los Datos" },
-  { title: "Gobernanza de los datos" },
+  {
+    index: 0,
+    title: "Integración y Acceso a Datos en Tiempo Real",
+    desplegable: [
+      "Conectamos y unificamos tus fuentes de datos para proporcionar acceso en tiempo real a la información crítica de tu negocio. Esto permite una toma de decisiones rápida y basada en datos actualizados, mejorando la capacidad de respuesta y la agilidad operativa.",
+    ],
+  },
+  {
+    index: 1,
+    title: "Análisis Descriptivo",
+    desplegable: [
+      "Proveemos análisis detallados de datos históricos para entender mejor las tendencias, patrones y comportamientos del negocio.",
+    ],
+  },
+  {
+    index: 2,
+    title: "Visualización de Datos y Dashboards Interactivos",
+    desplegable: [
+      "Diseñamos dashboards visualmente atractivos e interactivos que simplifican la interpretación de datos complejos, permitiendo a los usuarios explorar los datos de manera dinámica, comprender la información fácilmente y tomar decisiones informadas de manera rápida y efectiva.",
+    ],
+  },
+  {
+    index: 3,
+    title: "Democratización de la Información",
+    desplegable: [
+      "Fomentamos el acceso a la información y el conocimiento en toda la organización. Implementamos soluciones que permiten a todos los miembros del equipo, independientemente de su nivel técnico, acceder y utilizar los datos para tomar decisiones informadas, promoviendo una cultura de transparencia y colaboración.",
+    ],
+  },
+  {
+    index: 4,
+    title: "Mejora Continua y Optimización de Procesos",
+    desplegable: [
+      "Implementamos prácticas de análisis y monitoreo continuo para identificar áreas de mejora y optimizar procesos empresariales de manera constante.",
+    ],
+  },
+  {
+    index: 5,
+    title: "Fomento de una Cultura Orientada a los Datos",
+    desplegable: [
+      "Ayudamos a transformar tu organización en una entidad orientada a los datos, promoviendo la adopción de prácticas basadas en datos en todos los niveles. A través de implementación de mejores prácticas, aseguramos que tu equipo esté capacitado y motivado para utilizar los datos en todas sus decisiones diarias.",
+    ],
+  },
+  {
+    index: 6,
+    title: "Gobernanza de los datos",
+    desplegable: [
+      "Establecemos políticas y procedimientos para garantizar la calidad, seguridad y privacidad de los datos en toda la organización. Implementando un marco de gobernanza de datos que define claramente quién puede tomar qué acciones con qué datos, bajo qué circunstancias y utilizando qué métodos.",
+    ],
+  },
 ];
 
 export const BusinessInteligence = () => {
+  const [openIndexes, setOpenIndexes] = useState([]);
+
+  const handleDesplegables = (index) => {
+    setOpenIndexes((prevState) => {
+      let array = [...prevState];
+
+      if (array.includes(index)) {
+        array = array.filter((indice) => indice !== index);
+      } else {
+        array.push(index);
+      }
+
+      return array;
+    });
+  };
+
   return (
     <>
       <section className="light-section">
@@ -59,15 +118,43 @@ export const BusinessInteligence = () => {
       </section>
       <div className="bi-menu">
         {MENU.map((element, index) => {
+          const open = openIndexes?.includes(element.index);
+
           return (
-            <span
-              className="bi-menu-item"
-              key={index}
-              style={index === MENU.length - 1 ? { borderBottom: "none" } : {}}
-            >
-              <p>{element.title}</p>
-              <FaChevronRight size={16} />
-            </span>
+            <>
+              <span
+                className="bi-menu-item"
+                key={element.index}
+                style={
+                  index === MENU.length - 1 ? { borderBottom: "none" } : {}
+                }
+              >
+                <span
+                  className="horizontal"
+                  style={{ justifyContent: "space-between", width: "100%" }}
+                >
+                  <p style={{ fontWeight: 500 }}>{element.title}</p>
+                  {!open ? (
+                    <FaChevronRight
+                      size={16}
+                      className="desplegable-right"
+                      onClick={() => handleDesplegables(element.index)}
+                    />
+                  ) : (
+                    <FaChevronRight
+                      size={16}
+                      className="desplegable-down"
+                      onClick={() => handleDesplegables(element.index)}
+                    />
+                  )}
+                </span>
+                {open && (
+                  <span className="desplegables">
+                    <p>{element.desplegable[0]}</p>
+                  </span>
+                )}
+              </span>
+            </>
           );
         })}
       </div>

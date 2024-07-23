@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/binamics-web/static/css/main.6871bd1d.css",
-    "main.js": "/binamics-web/static/js/main.7f9518fa.js",
+    "main.js": "/binamics-web/static/js/main.6aefc599.js",
     "static/media/fondo_puntos-01.png": "/binamics-web/static/media/fondo_puntos-01.7260a9cfa92466b2f563.png",
     "index.html": "/binamics-web/index.html",
     "main.6871bd1d.css.map": "/binamics-web/static/css/main.6871bd1d.css.map",
-    "main.7f9518fa.js.map": "/binamics-web/static/js/main.7f9518fa.js.map"
+    "main.6aefc599.js.map": "/binamics-web/static/js/main.6aefc599.js.map"
   },
   "entrypoints": [
     "static/css/main.6871bd1d.css",
-    "static/js/main.7f9518fa.js"
+    "static/js/main.6aefc599.js"
   ]
 }

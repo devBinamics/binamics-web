@@ -46,7 +46,7 @@ button:hover {
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 8px;
   background: transparent;
   height: 5px;
   /* display: none; */

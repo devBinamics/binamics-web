@@ -15,6 +15,13 @@ export const Footer = () => {
     navigate(route);
   };
 
+  const scrollToTop = () => {
+    const element = document.getElementById("header");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <footer className="footer-wrapper">
       <div className="footer-column">
@@ -78,6 +85,12 @@ export const Footer = () => {
           </span>
         </div>
       </div>
+      <img
+        src={`${process.env.PUBLIC_URL}/assets/imagenes/botontop-37.png`}
+        className="image-go-top pointer"
+        alt="boton-top"
+        onClick={scrollToTop}
+      />
     </footer>
   );
 };

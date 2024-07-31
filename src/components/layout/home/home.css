@@ -169,8 +169,8 @@
 }
 
 .experiencias-card-button {
-  background-color: var(--red-highlight);
-  color: white;
+  background-color: white;
+  color: var(--red-highlight);
   border-radius: 50%;
   border: 1px solid var(--red-highlight);
   height: 3rem;
@@ -180,14 +180,11 @@
   place-items: center;
 }
 
-.experiencias-card-button > svg {
-  margin-left: 2px;
-}
-
 .experiencias-card-button:hover {
   cursor: pointer;
-  color: var(--red-highlight);
-  background-color: white;
+  color: white;
+  background-color: var(--red-highlight);
+
   transition: 500ms all;
 }
 
@@ -380,7 +377,7 @@
 .bi-menu {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   background-color: white;
   padding: 0px 5% 12rem 5%;
   width: 100%;
@@ -390,16 +387,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: clamp(200px, 500px, 100%);
+  width: clamp(200px, 900px, 100%);
   border-bottom: 1px solid #d8d8d8;
-  padding: 1rem 0px;
+  padding: 2rem 0px;
 }
 
 .desplegables {
   display: flex;
   flex-direction: column;
   padding: 16px 16px 0px 16px;
-  font-size: 0.9rem;
+  font-size: 1.125rem;
   width: 100%;
   animation: fade-in-desplegable 400ms forwards linear;
   max-height: 0;
@@ -417,6 +414,7 @@
 
 .desplegable-down {
   cursor: pointer;
+  margin-left: auto;
   animation: rotation-down 200ms forwards linear;
 }
 
@@ -431,6 +429,7 @@
 
 .desplegable-right {
   cursor: pointer;
+  margin-left: auto;
   animation: rotation-right 200ms forwards linear;
 }
 
@@ -447,6 +446,30 @@
   width: 50%;
   transform: translate(-2.5rem, 2.5rem);
   object-fit: cover;
+  z-index: 1;
+}
+
+.imagen-corazon {
+  height: 105%;
+  position: absolute;
+  left: 49%;
+  z-index: 0;
+  bottom: 2rem;
+  transform: translateX(-50%);
+}
+
+.imagen-estrella {
+  position: absolute;
+  top: -1.5rem;
+  left: 5rem;
+  height: 5rem;
+}
+
+.imagen-simbolo {
+  position: absolute;
+  top: -0.5rem;
+  left: 35%;
+  height: 2.5rem;
 }
 
 .descripcion-equipo-wrapper {
@@ -462,8 +485,8 @@
 .descripcion-equipo-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap: 1rem;
-  column-gap: 2rem;
+  row-gap: 3rem;
+  column-gap: 5rem;
   /* width: 100%; */
   padding: 2rem;
 }
@@ -471,9 +494,11 @@
 .descripcion-equipo-item {
   display: flex;
   flex-direction: column;
+  /* align-items: center; */
   text-align: left;
   gap: 0px;
-  padding: 0.5rem 1rem;
+  /* padding: 0.5rem 1rem; */
+  font-size: 1.5rem;
 }
 
 .descripcion-equipo-item svg {
@@ -481,13 +506,13 @@
 }
 
 .equipo-item-title {
-  font-size: 1.5rem;
+  font-size: 2.25rem;
   font-weight: 600;
 }
 
 .equipo-item-subtitle {
-  font-size: 1.125rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 #leer-mas-experiencias {
@@ -547,11 +572,11 @@
 }
 .parlante-images-wrapper {
   position: absolute;
-  /* top: 5%; */
+  top: 5%;
   right: 5%;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 105%;
   width: 100%;
   align-items: flex-end;
   z-index: 1;
@@ -582,7 +607,7 @@
   position: absolute;
   right: -1rem;
   bottom: -2.5vw;
-  width: 35%;
+  width: 32%;
 }
 
 .business-cards-layout {
@@ -650,6 +675,10 @@ p {
   font-size: 1rem;
   line-height: 1.25rem;
   margin: 2rem 0px;
+}
+
+.iconos-quienes-somos {
+  width: 2.25rem;
 }
 
 @media (max-width: 768px) {
@@ -763,6 +792,7 @@ p {
 
   .brocoly-info {
     width: 100%;
+    margin-bottom: 50px;
   }
 
   .image-brocoly-whatsapp {
@@ -771,6 +801,10 @@ p {
   }
 
   .parlante-images-wrapper {
+    display: none;
+  }
+
+  .imagen-corazon {
     display: none;
   }
 }

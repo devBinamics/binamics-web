@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { FaArrowRight, FaChevronRight } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
+import { GoChevronRight } from "react-icons/go";
 
 const MENU = [
   {
@@ -8,6 +9,7 @@ const MENU = [
     desplegable: [
       "Conectamos y unificamos tus fuentes de datos para proporcionar acceso en tiempo real a la información crítica de tu negocio. Esto permite una toma de decisiones rápida y basada en datos actualizados, mejorando la capacidad de respuesta y la agilidad operativa.",
     ],
+    img: `${process.env.PUBLIC_URL}/assets/imagenes/IconosBI/iconosBI-36.png`,
   },
   {
     index: 1,
@@ -15,6 +17,7 @@ const MENU = [
     desplegable: [
       "Proveemos análisis detallados de datos históricos para entender mejor las tendencias, patrones y comportamientos del negocio.",
     ],
+    img: `${process.env.PUBLIC_URL}/assets/imagenes/IconosBI/iconosBI-37.png`,
   },
   {
     index: 2,
@@ -22,6 +25,7 @@ const MENU = [
     desplegable: [
       "Diseñamos dashboards visualmente atractivos e interactivos que simplifican la interpretación de datos complejos, permitiendo a los usuarios explorar los datos de manera dinámica, comprender la información fácilmente y tomar decisiones informadas de manera rápida y efectiva.",
     ],
+    img: `${process.env.PUBLIC_URL}/assets/imagenes/IconosBI/iconosBI-38.png`,
   },
   {
     index: 3,
@@ -29,6 +33,7 @@ const MENU = [
     desplegable: [
       "Fomentamos el acceso a la información y el conocimiento en toda la organización. Implementamos soluciones que permiten a todos los miembros del equipo, independientemente de su nivel técnico, acceder y utilizar los datos para tomar decisiones informadas, promoviendo una cultura de transparencia y colaboración.",
     ],
+    img: `${process.env.PUBLIC_URL}/assets/imagenes/IconosBI/iconosBI-39.png`,
   },
   {
     index: 4,
@@ -36,6 +41,7 @@ const MENU = [
     desplegable: [
       "Implementamos prácticas de análisis y monitoreo continuo para identificar áreas de mejora y optimizar procesos empresariales de manera constante.",
     ],
+    img: `${process.env.PUBLIC_URL}/assets/imagenes/IconosBI/iconosBI-40.png`,
   },
   {
     index: 5,
@@ -43,6 +49,7 @@ const MENU = [
     desplegable: [
       "Ayudamos a transformar tu organización en una entidad orientada a los datos, promoviendo la adopción de prácticas basadas en datos en todos los niveles. A través de implementación de mejores prácticas, aseguramos que tu equipo esté capacitado y motivado para utilizar los datos en todas sus decisiones diarias.",
     ],
+    img: `${process.env.PUBLIC_URL}/assets/imagenes/IconosBI/iconosBI-41.png`,
   },
   {
     index: 6,
@@ -50,6 +57,7 @@ const MENU = [
     desplegable: [
       "Establecemos políticas y procedimientos para garantizar la calidad, seguridad y privacidad de los datos en toda la organización. Implementando un marco de gobernanza de datos que define claramente quién puede tomar qué acciones con qué datos, bajo qué circunstancias y utilizando qué métodos.",
     ],
+    img: `${process.env.PUBLIC_URL}/assets/imagenes/IconosBI/iconosBI-42.png`,
   },
 ];
 
@@ -121,35 +129,35 @@ export const BusinessInteligence = () => {
           const open = openIndexes?.includes(element.index);
 
           return (
-            <>
+            <span
+              className="bi-menu-item"
+              key={element.index}
+              style={index === MENU.length - 1 ? { borderBottom: "none" } : {}}
+            >
               <span
-                className="bi-menu-item"
-                key={element.index}
-                style={
-                  index === MENU.length - 1 ? { borderBottom: "none" } : {}
-                }
+                className="horizontal"
+                style={{
+                  width: "100%",
+                  fontSize: "1.75rem",
+                }}
               >
-                <span
-                  className="horizontal"
-                  style={{
-                    justifyContent: "space-between",
-                    width: "100%",
-                    fontSize: "1.125rem",
-                  }}
-                >
-                  <p style={{ fontWeight: 500 }}>{element.title}</p>
-                  <FaChevronRight
-                    className={!open ? "desplegable-right" : "desplegable-down"}
-                    onClick={() => handleDesplegables(element.index)}
-                  />
-                </span>
-                {open && (
-                  <span className="desplegables">
-                    <p>{element.desplegable[0]}</p>
-                  </span>
-                )}
+                <img
+                  src={element.img}
+                  alt={`logo-${index}`}
+                  style={{ width: "2.5rem" }}
+                />
+                <p style={{ fontWeight: 400, marginLeft: '2rem' }}>{element.title}</p>
+                <GoChevronRight
+                  className={!open ? "desplegable-right" : "desplegable-down"}
+                  onClick={() => handleDesplegables(element.index)}
+                />
               </span>
-            </>
+              {open && (
+                <span className="desplegables">
+                  <p>{element.desplegable[0]}</p>
+                </span>
+              )}
+            </span>
           );
         })}
       </div>

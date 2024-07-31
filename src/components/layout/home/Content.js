@@ -1,8 +1,9 @@
-import { FaArrowRight, FaChevronRight, FaHeart } from "react-icons/fa";
+import { FaArrowRight, FaHeart } from "react-icons/fa";
 import { BusinessInteligence } from "./BusinessInteligence";
 import { TbUserScan } from "react-icons/tb";
 import { IoStar } from "react-icons/io5";
 import { GrGrow } from "react-icons/gr";
+import { GoChevronRight } from "react-icons/go";
 
 const cards = [
   {
@@ -53,7 +54,10 @@ export const Content = () => {
   return (
     <>
       <div className="top-section-background">
-        <section className="dark-section">
+        <section
+          className="dark-section"
+          style={{ minHeight: "calc(100svh - 5rem)" }}
+        >
           <div className="columna">
             <span className="horizontal gap-8" style={{ marginBottom: 24 }}>
               <span className="linea-blanca"></span>
@@ -94,7 +98,7 @@ export const Content = () => {
             alt="tableros"
           />
         </section>
-        <div className="clientes-section">
+        <div className="clientes-section" style={{ marginBlock: 100 }}>
           <span
             className="horizontal gap-8"
             style={{
@@ -168,7 +172,7 @@ export const Content = () => {
             <FaArrowRight />
           </button>
         </div>
-        <section className="clientes-section">
+        <section className="clientes-section" style={{ marginBottom: 50 }}>
           <span
             className="horizontal gap-8"
             style={{
@@ -218,18 +222,37 @@ export const Content = () => {
         </section>
         <section
           className="dark-section"
-          style={{ padding: 0, alignItems: "flex-end" }}
+          style={{ padding: 0, alignItems: "flex-end", position: "relative" }}
         >
           <img
             src={`${process.env.PUBLIC_URL}/assets/imagenes/equipo-10.png`}
             className="imagen-equipo"
             alt="equipo"
           />
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/imagenes/imagenes-web-44.png`}
+            alt="linea-estrella"
+            className="imagen-estrella"
+          />
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/imagenes/imagenes-web-43.png`}
+            alt="simbolo-equipo"
+            className="imagen-simbolo"
+          />
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/imagenes/quienes-somos/iconos-quienesomos-27.png`}
+            className="imagen-corazon"
+            alt="corazon"
+          />
           <div className="descripcion-equipo-wrapper">
             <div className="descripcion-equipo-layout">
               <span className="descripcion-equipo-item">
-                <span className="horizontal gap-4">
-                  <FaHeart size={24} />
+                <span className="horizontal gap-8">
+                  <img
+                    alt="años"
+                    className="iconos-quienes-somos"
+                    src={`${process.env.PUBLIC_URL}/assets/imagenes/quienes-somos/iconos-quienesomos-26.png`}
+                  />
                   <p className="equipo-item-title">+13 años</p>
                 </span>
                 <span className="equipo-item-subtitle">
@@ -238,8 +261,12 @@ export const Content = () => {
                 </span>
               </span>
               <span className="descripcion-equipo-item">
-                <span className="horizontal gap-4">
-                  <GrGrow size={24} />
+                <span className="horizontal gap-8">
+                  <img
+                    alt="años"
+                    className="iconos-quienes-somos"
+                    src={`${process.env.PUBLIC_URL}/assets/imagenes/quienes-somos/iconos-quienesomos-24.png`}
+                  />
                   <p className="equipo-item-title">25 años</p>
                 </span>
                 <span className="equipo-item-subtitle">
@@ -248,8 +275,12 @@ export const Content = () => {
                 </span>
               </span>
               <span className="descripcion-equipo-item">
-                <span className="horizontal gap-4">
-                  <IoStar size={24} />
+                <span className="horizontal gap-8">
+                  <img
+                    alt="años"
+                    className="iconos-quienes-somos"
+                    src={`${process.env.PUBLIC_URL}/assets/imagenes/quienes-somos/iconos-quienesomos-23.png`}
+                  />
                   <p className="equipo-item-title">4.7</p>
                 </span>
                 <span className="equipo-item-subtitle">
@@ -258,8 +289,12 @@ export const Content = () => {
                 </span>
               </span>
               <span className="descripcion-equipo-item">
-                <span className="horizontal gap-4">
-                  <TbUserScan size={24} />
+                <span className="horizontal gap-8">
+                  <img
+                    alt="años"
+                    className="iconos-quienes-somos"
+                    src={`${process.env.PUBLIC_URL}/assets/imagenes/quienes-somos/iconos-quienesomos-25.png`}
+                  />
                   <p className="equipo-item-title">+50</p>
                 </span>
                 <span className="equipo-item-subtitle">
@@ -419,7 +454,10 @@ export const Content = () => {
               <p>Mire cómo funciona</p>
               <FaArrowRight />
             </button>
-            <button className="boton-generico boton-oscuro">
+            <button
+              className="boton-generico boton-oscuro"
+              style={{ zIndex: 2 }}
+            >
               <p>Descargar pdf brocoly</p>
             </button>
           </span>
@@ -493,7 +531,7 @@ export const Content = () => {
                         <p className="experiencias-card-date">{card.date}</p>
                       </div>
                       <button className="experiencias-card-button">
-                        <FaChevronRight size={24} />
+                        <GoChevronRight size={24} />
                       </button>
                     </div>
                   </div>
@@ -516,7 +554,7 @@ export const Content = () => {
                     <p className="experiencias-card-date">{card.date}</p>
                   </div>
                   <button className="experiencias-card-button">
-                    <FaChevronRight size={24} />
+                    <GoChevronRight size={24} />
                   </button>
                 </div>
               </div>

@@ -6,7 +6,7 @@ export const Header = () => {
   const navigateAndScroll = useNavigateAndScroll();
 
   return (
-    <header className="header-wrapper">
+    <header className="header-wrapper" id="header">
       <img
         src={`${process.env.PUBLIC_URL}/assets/logos/logo-binamics-blanco.png`}
         alt="logo-empresa"

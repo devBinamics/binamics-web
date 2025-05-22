@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: var(--dark-background);
+  background-color: var(--light-background);
   min-height: 100svh;
   min-height: 100vh;
   overflow-x: hidden;
@@ -18,7 +18,7 @@
 .linea-blanca {
   height: 1px;
   width: 25px;
-  background-color: white;
+  background-color: black;
 }
 
 .linea-negra {
@@ -31,6 +31,7 @@
   font-family: "Space Grotesk", sans-serif;
   font-size: 1.25rem;
   line-height: 1.25rem;
+  color: black;
 }
 
 .section-subtitle {
@@ -67,7 +68,7 @@
 
 .top-section-background {
   background: url("/public/assets/imagenes/fondo_puntos-01.png"),
-    linear-gradient(#000 0%, #000 100%);
+    linear-gradient(#fff 0%, #fff 100%);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -98,6 +99,7 @@
   flex-direction: column;
   background-color: white;
   padding: 5%;
+  color: #000;
   width: 100%;
   margin-top: auto;
   padding-bottom: 100px;
@@ -333,7 +335,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: white;
+  /* color: white; */
+  color: black;
 }
 
 .clientes-logos img {
@@ -345,7 +348,6 @@
   flex-direction: row;
   align-items: center;
   color: var(--dark-background);
-  background-color: white;
   width: 100%;
   padding: 2rem 5%;
   justify-content: space-between;
@@ -363,13 +365,13 @@
   left: 0px;
 }
 
-.boton-verde {
-  background-color: var(--green-highlight);
+.boton-azul {
+  background-color: var(--blue-highlight);
   color: white;
 }
 
-.boton-verde:hover {
-  color: var(--green-highlight) !important;
+.boton-azul:hover {
+  color: var(--blue-highlight) !important;
   background-color: white !important;
   transition: 500ms all;
 }
@@ -554,6 +556,7 @@
   align-items: center;
   white-space: nowrap;
   position: relative;
+  background-color: black;
 }
 
 .clientes-logos {

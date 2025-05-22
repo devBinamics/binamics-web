@@ -55,39 +55,43 @@ export const Content = () => {
     <>
       <div className="top-section-background">
         <section
-          className="dark-section"
+          className="light-section"
           style={{ minHeight: "calc(100svh - 5rem)" }}
         >
           <div className="columna">
             <span className="horizontal gap-8" style={{ marginBottom: 24 }}>
               <span className="linea-blanca"></span>
-              <p className="datos-upper-text">Uso eficiente de los datos</p>
+              <p className="datos-upper-text">Mas valor para tus decisiones</p>
             </span>
             <p className="section-title">
               <span>
-                Impulse <br />
-                su negocio con el <br /> poder de los
-                <span style={{ color: "var(--red-highlight)" }}> datos</span>
+                Convertí <br />
+                datos en decisiones <br />
+                <span style={{ color: "var(--red-highlight)" }}>
+                  estratégicas
+                </span>
               </span>
             </p>
 
             <p className="section-subtitle">
-              Descubra un abanico de oportunidades mediante <br /> la
-              implementación de análisis avanzados en <br />
+              Anticipá lo que necesita el mercado, mejorá tus operaciones
+              <br /> y aumentá tu{" "}
               <span className="underscore">
-                inteligencia
+                rentabilidad
                 <img
                   alt="subrayado"
                   src={`${process.env.PUBLIC_URL}/assets/imagenes/subrayado1-20.png`}
                 />
               </span>{" "}
-              de negocio y del cliente.
+              con estrategias basadas
+              <br />
+              en inteligencia de negocios.
             </p>
             <span className="horizontal gap-16" style={{ marginTop: 50 }}>
               <button className="boton-generico boton-rojo">
                 Inteligencia de negocios
               </button>
-              <button className="boton-generico boton-verde">
+              <button className="boton-generico boton-azul">
                 Inteligencia del cliente
               </button>
             </span>
@@ -102,15 +106,19 @@ export const Content = () => {
           <span
             className="horizontal gap-8"
             style={{
-              color: "white",
               marginInline: "auto",
               width: "fit-content",
             }}
           >
             <span className="linea-blanca"></span>
-            <p className="datos-upper-text">
-              Empresas que confían en nuestros productos tecnológicos
-            </p>
+            <span className="columna">
+              <p className="datos-upper-text">
+                Clientes que accionan con datos, no con corazonadas
+              </p>
+              <span className="datos-upper-text">
+                <b>Mirá quienes nos eligen.</b> Vos también podés estar acá
+              </span>
+            </span>
             <span className="linea-blanca"></span>
           </span>
           <span className="logos">
@@ -167,8 +175,8 @@ export const Content = () => {
               />
             </span>
           </span>
-          <button className="boton-generico boton-negro">
-            <p>Leer casos de éxito</p>
+          <button className="boton-generico boton-blanco">
+            <p>Descubrí casos de éxito</p>
             <FaArrowRight />
           </button>
         </div>
@@ -183,7 +191,7 @@ export const Content = () => {
           >
             <span className="linea-blanca"></span>
             <p className="datos-upper-text">
-              Con base sólida de conocimientos en el agro
+              Con base sólida de conocimientos aplicados
             </p>
             <span className="linea-blanca"></span>
           </span>
@@ -195,33 +203,33 @@ export const Content = () => {
               margin: "2rem 0px",
             }}
           >
-            Nuestro aporte, <br /> hace un servicio único
+            Nuestro aporte, <br /> hace un{" "}
+            <span style={{ color: "var(--red-highlight)" }}>
+              servicio único
+            </span>
           </p>
-          <p
-            className="section-subtitle"
-            style={{ textAlign: "center", color: "white" }}
-          >
-            Somos una empresa qe transforma tu negocio utilizando el
+          <p className="section-subtitle" style={{ textAlign: "center" }}>
+            Transformá tu negocio con el motor del cambio:
             <span className="underscore">
               {" "}
-              motor del cambio
+              los datos.
               <img
                 alt="subrayado"
                 src={`${process.env.PUBLIC_URL}/assets/imagenes/subrayado2-21.png`}
               />
-            </span>{" "}
-            "los datos". <br />
-            Con un equipo de profesionales apasionado por la innovación,
-            conocemos la capacidad que tienen <br />
-            los datos para revolucionar industrias y optimizar procesos, usamos
-            tecnología propia y también de <br /> Partners para ofrecer
-            productos únicos y de vanguardia diseñados para mejorar la
-            eficiencia y <br />
-            facilitar la toma de decisiones.
+            </span>
+            <br />
+            Tenemos un equipo apasionado por la innovación, que crea tecnología
+            única y de vanguardia para
+            <br />
+            mejorar tu eficiencia y ayudarte a tomar decisiones con impacto
+            real. Menos intuición.
+            <br />
+            Más información. Mejores resultados.
           </p>
         </section>
         <section
-          className="dark-section"
+          className="light-section"
           style={{ padding: 0, alignItems: "flex-end", position: "relative" }}
         >
           <img
@@ -304,12 +312,13 @@ export const Content = () => {
               </span>
             </div>
             <div className="horizontal gap-16" style={{ marginTop: "2rem" }}>
-              <button className="boton-generico boton-negro">
+              <button className="boton-generico boton-blanco">
                 <p>Más sobre nosotros</p>
                 <FaArrowRight />
               </button>
-              <button className="boton-generico boton-negro">
-                <p>Descargar pdf institucional</p>
+              <button className="boton-generico boton-blanco">
+                <p>Descargar PDF institucional</p>
+                <FaArrowRight />
               </button>
             </div>
           </div>
@@ -334,14 +343,14 @@ export const Content = () => {
                 className="boton-generico boton-azul"
                 style={{ borderColor: "white" }}
               >
-                <p>Mire cómo funciona</p>
+                <p>Mirá cómo funciona</p>
                 <FaArrowRight />
               </button>
               <button
                 className="boton-generico boton-azul"
                 style={{ borderColor: "white" }}
               >
-                <p>Descargar pdf BI</p>
+                <p>Descargá PDF de BI</p>
                 <FaArrowRight />
               </button>
             </span>
@@ -352,7 +361,7 @@ export const Content = () => {
             className="bi-image"
           />
         </section>
-        <section className="dark-section">
+        <section className="light-section">
           <img
             className="img-tableros"
             src={`${process.env.PUBLIC_URL}/assets/imagenes/seccionbrocoly-06.png`}
@@ -400,7 +409,7 @@ export const Content = () => {
             </span>
           </div>
         </section>
-        <section className="dark-section">
+        <section className="light-section">
           <p
             className="section-title"
             style={{ width: "100%", textAlign: "center", marginBottom: "2rem" }}
@@ -419,7 +428,7 @@ export const Content = () => {
         </section>
       </div>
       <section
-        className="dark-section"
+        className="light-section"
         style={{
           position: "relative",
           paddingBottom: "5rem",
@@ -451,7 +460,7 @@ export const Content = () => {
           </p>
           <span className="horizontal gap-16">
             <button className="boton-generico boton-oscuro">
-              <p>Mire cómo funciona</p>
+              <p>Mirá cómo funciona</p>
               <FaArrowRight />
             </button>
             <button

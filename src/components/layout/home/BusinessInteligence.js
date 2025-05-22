@@ -94,25 +94,25 @@ export const BusinessInteligence = () => {
           </p>
 
           <p className="section-subtitle">
-            Descubra como se puede utilizar la inteligencia de Negocios para
-            transformar la información en{" "}
+            Descubrí como usar utilizar la inteligencia de negocios para
+            <br />
+            convertir la información en conocimiento valioso y{" "}
             <span className="underscore">
-              conocimiento significativo
+              útil para tu negocio.
               <img
                 style={{}}
                 src={`${process.env.PUBLIC_URL}/assets/imagenes/subrayado2-21.png`}
                 alt="subrayado"
               />
-            </span>{" "}
-            y útil de tu negocio
+            </span>
           </p>
           <span className="horizontal gap-16" style={{ marginTop: 50 }}>
             <button className="boton-generico boton-blanco">
-              <p>Saber más</p>
+              <p>Conocé más</p>
               <FaArrowRight />
             </button>
             <button className="boton-generico boton-blanco">
-              <p>Solicitar demo</p>
+              <p>Solicitá una demo</p>
               <FaArrowRight />
             </button>
           </span>
@@ -146,7 +146,9 @@ export const BusinessInteligence = () => {
                   alt={`logo-${index}`}
                   style={{ width: "2.5rem" }}
                 />
-                <p style={{ fontWeight: 400, marginLeft: '2rem' }}>{element.title}</p>
+                <p style={{ fontWeight: 400, marginLeft: "2rem" }}>
+                  {element.title}
+                </p>
                 <GoChevronRight
                   className={!open ? "desplegable-right" : "desplegable-down"}
                   onClick={() => handleDesplegables(element.index)}

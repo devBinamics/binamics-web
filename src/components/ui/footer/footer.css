@@ -34,6 +34,10 @@
   font-size: 1.125rem;
 }
 
+.footer-text {
+  line-height: 24px;
+}
+
 .logo-binamics {
   height: 2rem;
   object-fit: contain;
@@ -41,9 +45,7 @@
   margin-left: -6px;
 }
 
-.footer-text {
-  line-height: 24px;
-}
+
 
 .footer-secondary {
   width: 40%;

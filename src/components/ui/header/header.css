@@ -3,7 +3,7 @@
   flex-direction: row;
   align-items: center;
   padding: 24px 5%;
-  background-color: var(--dark-background);
+  background-color: var(--light-background);
 }
 
 /* .logo-section {
@@ -13,7 +13,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  color: var(--light-background);
+  color: var(--dark-background);
   font-size: 1rem;
   line-height: 1rem;
   gap: 24px;
@@ -25,7 +25,8 @@ a {
   color: var(--light-background);
 }
 
-.rutas-section > a, .rutas-section > p {
+.rutas-section > a,
+.rutas-section > p {
   font-family: "Space Grotesk", sans-serif;
   cursor: pointer;
 }

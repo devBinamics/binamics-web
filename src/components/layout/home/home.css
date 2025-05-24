@@ -296,7 +296,7 @@
 .boton-negro {
   background-color: var(--dark-background);
   color: white;
-  border: 1px solid white;
+  border: 1px solid var(--dark-background);
 }
 
 .boton-negro:hover {
@@ -313,11 +313,12 @@
   font-size: 1rem;
   line-height: 1rem;
   font-weight: 500;
+  border: 1px solid var(--red-highlight);
 }
 
 .boton-rojo:hover {
-  color: var(--red-highlight) !important;
-  background-color: white !important;
+  color: var(--red-highlight);
+  background-color: white;
   transition: 500ms all;
 }
 
@@ -365,10 +366,6 @@
   left: 0px;
 }
 
-.boton-azul {
-  background-color: var(--blue-highlight);
-  color: white;
-}
 
 .boton-azul:hover {
   color: var(--blue-highlight) !important;
@@ -526,18 +523,12 @@
 .boton-azul {
   color: var(--light-background);
   background-color: var(--blue-highlight);
-  border: 1px solid white;
+  border: 1px solid var(--blue-highlight);
   border-radius: 24px;
   gap: 16px;
   font-size: 1rem;
   line-height: 1rem;
   font-weight: 500;
-}
-
-.boton-azul:hover {
-  color: var(--blue-highlight);
-  background-color: white !important;
-  transition: 500ms all;
 }
 
 .color-card-subtitle {

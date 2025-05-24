@@ -502,10 +502,11 @@ export const Content = () => {
         </span>
         <p className="experiencias-title">
           <span>
-            Experiencias y <br />
-            actualizaciones
+            Ides que inspiran.
+            <br />
+            Innovaciones que hacés
           </span>
-          <span style={{ color: "var(--red-highlight)" }}> tecnológicas</span>
+          <span style={{ color: "var(--red-highlight)" }}> realidad</span>
         </p>
         <div className="experiencias-cards-layout">
           {cards.map((card, index) => {
@@ -513,17 +514,19 @@ export const Content = () => {
               return (
                 <div className="experiencias-card-subscribe" key={index}>
                   <p>
-                    Suscríbete a <br />
-                    nuestro boletín
+                    No te pierdas
+                    <br />
+                    lo que se viene: suscribite
                   </p>
                   <p>
-                    Información de calidad <br /> para nuestros clientes <br />y
-                    comunidad.
+                    Contenido pensado para vos, <br />
+                    que buscás decidir mejor, hacer más <br />y marcar la
+                    diferencia.
                   </p>
                   <span className="span-subscripcion">
-                    <p>Introduce tu correo electrónico</p>
-                    <button className="boton-generico boton-blanco">
-                      Suscribir
+                    <p>Dejá tu mail y suscribite</p>
+                    <button className="boton-generico boton-rojo">
+                      Suscribite
                     </button>
                   </span>
                 </div>
@@ -548,7 +551,7 @@ export const Content = () => {
                     className="boton-generico boton-blanco"
                     id="leer-mas-experiencias"
                   >
-                    <p>Leer mas experiencias</p>
+                    <p>Explorá más experiencias</p>
                     <FaArrowRight />
                   </button>
                 </div>
